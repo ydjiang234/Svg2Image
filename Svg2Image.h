@@ -3,8 +3,6 @@
 
 #include <iostream>
 #include <QImage>
-
-
 #include <QByteArray>
 
 
