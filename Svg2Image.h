@@ -13,9 +13,10 @@ class Svg2Image
 public:
     Svg2Image();
     ~Svg2Image();
-    bool save(QByteArray array, QString path, QSize size, const char* format="jpg", int dpi=300, int Quality=10, Qt::GlobalColor color=Qt::GlobalColor::white);
+    bool save(QByteArray array, QString path, QSize size, const char* format="jpg", int dpi=300, Qt::GlobalColor color=Qt::GlobalColor::white);
+    //size here is in mm
 private:
-    QImage* Bytes2Image(QByteArray array, QSize size, int dpi=300, int Quality=10, Qt::GlobalColor color=Qt::GlobalColor::white);
+    QImage* Bytes2Image(QByteArray array, QSize size, int dpi=300, Qt::GlobalColor color=Qt::GlobalColor::white);
 };
 
 #endif // SVG2IMAGE_H
